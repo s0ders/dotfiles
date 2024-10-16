@@ -1,0 +1,5 @@
+nnoremap <Space> <Nop>
+map <Space> <Leader>
+
+map <leader>v <Action>(ActivateTerminalToolWindow)
+map <leader>ff <Action>(SearchEverywhere)
