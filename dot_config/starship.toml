@@ -1,0 +1,6 @@
+[golang]
+symbol = 'Go '
+
+[username]
+show_always = true
+style_user = 'bold green'
