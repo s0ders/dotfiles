@@ -2,6 +2,10 @@
 " property file at <IDE_PATH>/bin/idea.properties and add "idea.vim.configuration.path=${user.home}/.ideavimrc".
 " If issue persist, check that the file does not contain "ghost" characters using "cat -A .ideavimrc".
 
+" Disable annoying sounds
+set visualbell
+set noerrorbells
+
 nnoremap <Space> <Nop>
 map <Space> <Leader>
 
@@ -9,11 +13,15 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Switch tabs
-nnoremap <tab> <Action>(NextTab)
-nnoremap <S-tab> <Action>(PreviousTab)
+nmap <tab> <Action>(NextTab)
+nmap <S-tab> <Action>(PreviousTab)
 
-map <Leader>ff <Action>(SearchEverywhere)
+" Need to install "Fuzzier" plugin (like Telescope in NeoVim)
+map <Leader>ff <Action>(com.mituuz.fuzzier.search.Fuzzier)
+map <Leader>fw <Action>(com.mituuz.fuzzier.FuzzyGrep)
 
-map <Leader>gb <Action>(Annotate)
+ma <Leader>gb <Action>(Annotate)
 
 map <Leader>h <Action>(ActivateTerminalToolWindow)
+
+map <Leader>/ <Action>(CommentByLineComment)
