@@ -9,6 +9,12 @@ set noerrorbells
 " OS and IdeaVim share the same buffer for clipboard operation
 set clipboard+=unnamed,unnamedplus
 
+" Search improvements
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+
 nnoremap <Space> <Nop>
 map <Space> <Leader>
 
