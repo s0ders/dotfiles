@@ -27,7 +27,7 @@ nmap <S-tab> <Action>(PreviousTab)
 
 " Need to install "Fuzzier" plugin (like Telescope in NeoVim)
 map <Leader>ff <Action>(com.mituuz.fuzzier.search.Fuzzier)
-map <Leader>fw <Action>(com.mituuz.fuzzier.FuzzyGrep)
+map <Leader>fw <Action>(com.mituuz.fuzzier.grep.FuzzyGrep)
 
 map <Leader>gb <Action>(Annotate)
 
