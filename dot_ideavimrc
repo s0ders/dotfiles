@@ -29,7 +29,7 @@ nmap <S-tab> <Action>(PreviousTab)
 map <Leader>ff <Action>(com.mituuz.fuzzier.search.Fuzzier)
 map <Leader>fw <Action>(com.mituuz.fuzzier.FuzzyGrep)
 
-ma <Leader>gb <Action>(Annotate)
+map <Leader>gb <Action>(Annotate)
 
 map <Leader>h <Action>(ActivateTerminalToolWindow)
 
