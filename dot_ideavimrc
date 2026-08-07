@@ -1,10 +1,10 @@
+
 " Note: if the .ideavimrc file is not loaded by the IdeaVim plugin, go into the IDE
 " property file at <IDE_PATH>/bin/idea.properties and add "idea.vim.configuration.path=${user.home}/.ideavimrc".
 " If issue persist, check that the file does not contain "ghost" characters using "cat -A .ideavimrc".
 
 " Disable annoying sounds
 set visualbell
-set noerrorbells
 
 " OS and IdeaVim share the same buffer for clipboard operation
 set clipboard+=unnamed,unnamedplus
@@ -34,3 +34,7 @@ map <Leader>gb <Action>(Annotate)
 map <Leader>h <Action>(ActivateTerminalToolWindow)
 map <Leader>/ <Action>(CommentByLineComment)
 map <Leader>w <Action>(SaveAll)
+map <Leader>cc <Action>(CloseAllEditorsButActive)
+map <Leader>x <Action>(CloseContent)
+map <Leader>e <Action>(SelectInProjectView)
+map <Leader>a <Action>(NewElementSamePlace)
